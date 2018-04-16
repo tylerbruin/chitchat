@@ -1,0 +1,57 @@
+body {
+    background: grey;
+}
+h1 {
+    color: blanchedalmond;
+    text-shadow: 3px 2px red;
+    
+    text-decoration: underline;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    height: 800px;
+    background:rgb(211, 207, 207);
+    margin: .165%;
+}
+
+.column-middle {
+    float: left;
+    width: 59%;
+    height: 800px;
+    background:rgb(211, 207, 207);
+    margin: .165%;
+}
+
+.chatbox {
+    height: 50vh;
+    overflow: auto;
+    position: relative;
+    border: 1px solid black;
+    background: rgb(233, 250, 249);
+    padding: 15px;
+}
+
+#messagebox {
+    margin-top:1%;
+    margin-left:1%;
+    padding: 1%;
+    width: 77%;
+    height: 80px;
+}
+.submitmessage{
+    height: 80px;
+    width: 18%;
+
+}
+.inputboxes{
+    display: block;
+    margin-right: auto;
+    width: 40%;
+};
+
+/*     display: block;
+    
+    margin-right: auto;
+    width: 50%; */

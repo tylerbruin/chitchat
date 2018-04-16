@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>ChitChat</title>
+      <link rel="stylesheet" type="text/css" href="main.css">
+      <script src="script.js"></script>
+   </head>
+   <body onload="disableButtonsOnLoad(); changeDate();">
+
+    <div id="ChitChat" > 
+        <h1>Welcome to Chit Chat!</h1>
+    </div>
+
+    <div id="row">
+        <div class="column">
+            
+            <h1>Sign in to Chit Chat!</h1>
+            <form>
+                <label>Username</label>
+                <input class="inputboxes" type="text" id="userLogin">
+                <br>
+                <label>Password</label>
+                <input class="inputboxes" type="password" id="userPass">
+                <br>
+                <button id="loginButton" type="button" onclick="login();">Log In</button>
+                <!--  <button id="loginButton" type="button" onclick="login(); document.getElementById('userLogin').value = ''; document.getElementById('userPass').value = ''">Log In</button> !-->
+            </form>
+
+            <div class=loggedInUser>
+                <button id="logoutButton" type="button" onclick="logout();">Log Out</button>
+                <label id=loggedInUser2></label>
+                <h1>
+                <label id="changeUsernameLabel">Change Username?</label>
+                </h1>   
+                <input class="inputboxes" type="text" id="newUserLogin">
+                <button id="changeUsernameButton" type="button" onclick="changeUsername();">Change Username</button>
+                <br>       
+            </div>
+
+            <form id="registerForm">
+                <h1>Register to Chit Chat!</h1>
+                <label>Username</label> 
+                <input class="inputboxes" type="text" id="ruser">
+                <br>
+                <label>Password</label>
+                <input class="inputboxes" type="password" id="rpass">
+                <br>
+                <label>First Name</label>
+                <input class="inputboxes" type="text" id="fname">
+                <br>
+                <label>Last Name</label>
+                <input class="inputboxes" type="text" id="lname">
+                <br>
+                <label>Email</label>
+                <input class="inputboxes" type="text" id="email">
+                <br>
+                <button type="button" onclick="registerUser();">Register?</button>
+            </form>
+
+        </div>
+
+        <div class="column-middle">
+            <h1>Chit Chat!</h1>
+
+            <div class="chatbox" id="chatbox"> 
+                <div id="info">
+
+                </div>
+            </div>
+
+            <div class="messagebox">
+                <input type="text"  id="messagebox">
+                <button id="sndButton" type="button" class="submitmessage" onClick="sendMessage();">Send Message</button>
+            </div>
+        </div>
+
+        <div class="column">
+            
+            <div class="list">
+                <h1>Logged in Users</h1>
+                <div id="infoOnline">
+                    
+                </div>
+            </div>
+            <div class="list">
+                <h1>Logged out Users</h1>
+                <div id="infoOffline">
+                    
+                </div>
+            </div>
+            <br>
+            <br>
+            
+            <h1>Chat History</h1>
+
+            <form>
+                Select Date to display message history:
+                <br>
+                <input type="date" id="selectedDate" name ="date1" min="2018-01-01"> <!-- HTML Validator error for IE 11! Supported in FireFox and Chrome. -->
+                <button id="datePicker" type="button" onclick="changeDate();">Load</button>
+                <button id="datePickerReset" type="button" onclick="resetChangeDate();">Reset</button>
+                <br>
+                <br>
+                <label id=currentDate></label>
+            </form>
+
+        </div>
+    </div>
+      
+   </body>
+</html>
