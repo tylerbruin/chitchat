@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.getElementById("info").innerHTML = "No messages for date: " + newdate;
             }
         }
-    }, 1000); 
+    }, 1500); 
 })
 
 
@@ -150,11 +150,11 @@ window.addEventListener("beforeunload", function(e){
  }, false); 
 
 //////////////////////////////////////// Prompts Refresh warning \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-window.onbeforeunload = function(event)
+/* window.onbeforeunload = function(event)
  {
         return confirm("Confirm Refresh? User will be logged out.");
     
- };
+ }; */
 //////////////////////////////////////// Online / Offline Status \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 function getStatus(response) {
     
@@ -177,7 +177,7 @@ function getStatus(response) {
 document.addEventListener("DOMContentLoaded", function() { 
     setInterval(function() {
         ajaxRequest("GET", "getUserStatus.php", null, getStatus);
-    }, 1000); 
+    }, 4000); 
 })
 
 
