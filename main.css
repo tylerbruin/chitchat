@@ -1,25 +1,52 @@
 body {
-    background: grey;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #a6a6a6;
+    line-height: 1.5em;
+    min-width: 510px;
 }
+
+header{
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px #000 solid;
+    margin-bottom: 10px;
+    height: 100px;
+}
+
 h1 {
-    color: blanchedalmond;
+    color: white;
     text-shadow: 1px 1px black;
-    
-    text-decoration: underline;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.1em;
+}
+h3 {
+    color: white;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.1em;
 }
 
 .column {
+    overflow: hidden;
     float: left;
-    width: 20%;
-    height: 800px;
+    width: 15%;
+    height: auto;
+    min-height: 760px;
+    max-height: 780px;
     background:rgb(211, 207, 207);
     margin: .165%;
 }
 
 .column-middle {
     float: left;
-    width: 59%;
-    height: 800px;
+    width: 69%;
+    min-height: 760px;
+    height: auto;
     background:rgb(211, 207, 207);
     margin: .165%;
 }
@@ -37,7 +64,7 @@ h1 {
     margin-top:1%;
     margin-left:1%;
     padding: 1%;
-    width: 77%;
+    width: 76%;
     height: 80px;
 }
 .submitmessage{
@@ -47,11 +74,14 @@ h1 {
 }
 .inputboxes{
     display: block;
-    margin-right: auto;
-    width: 40%;
-};
+    margin-left: 3px;
+    width: 90%;
+    padding-left: 5px;
+}
 
-/*     display: block;
-    
-    margin-right: auto;
-    width: 50%; */
+.userlist{
+    text-align: center;
+}
+label{
+    display: inline-block;
+}

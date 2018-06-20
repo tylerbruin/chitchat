@@ -9,60 +9,52 @@
    </head>
    <body onload="disableButtonsOnLoad(); changeDate();">
 
-    <div id="ChitChat" > 
-        <h1>Welcome to Chit Chat!</h1>
-    </div>
+    <header>
+        <h1>ChitChat</h1>
+        <p>Welcome to ChitChat</p>
+    </header>
 
     <div id="row">
         <div class="column">
             
-            <h1>Sign in to Chit Chat!</h1>
+            <h3>Sign in to Chit Chat!</h3>
             <form>
                 <label>Username</label>
                 <input class="inputboxes" type="text" id="userLogin">
-                <br>
                 <label>Password</label>
                 <input class="inputboxes" type="password" id="userPass">
-                <br>
                 <button id="loginButton" type="button" onclick="login();">Log In</button>
-                <!--  <button id="loginButton" type="button" onclick="login(); document.getElementById('userLogin').value = ''; document.getElementById('userPass').value = ''">Log In</button> !-->
             </form>
 
             <div class=loggedInUser>
                 <button id="logoutButton" type="button" onclick="logout();">Log Out</button>
                 <label id=loggedInUser2></label>
-                <h1>
-                <label id="changeUsernameLabel">Change Username?</label>
-                </h1>   
+                <h3>
+                    <label id="changeUsernameLabel">Change Username?</label>
+                </h3>   
                 <input class="inputboxes" type="text" id="newUserLogin">
                 <button id="changeUsernameButton" type="button" onclick="changeUsername();">Change Username</button>
-                <br>       
             </div>
 
             <form id="registerForm">
-                <h1>Register to Chit Chat!</h1>
+                <h3>Register to Chit Chat!</h3>
                 <label>Username</label> 
                 <input class="inputboxes" type="text" id="ruser">
-                <br>
                 <label>Password</label>
                 <input class="inputboxes" type="password" id="rpass">
-                <br>
                 <label>First Name</label>
                 <input class="inputboxes" type="text" id="fname">
-                <br>
                 <label>Last Name</label>
                 <input class="inputboxes" type="text" id="lname">
-                <br>
                 <label>Email</label>
                 <input class="inputboxes" type="text" id="email">
-                <br>
                 <button type="button" onclick="registerUser();">Register?</button>
             </form>
 
         </div>
 
         <div class="column-middle">
-            <h1>Chit Chat!</h1>
+            <h1>ChitChat Room</h1>
 
             <div class="chatbox" id="chatbox"> 
                 <div id="info">
@@ -77,23 +69,18 @@
         </div>
 
         <div class="column">
-            
             <div class="list">
-                <h1>Logged in Users</h1>
-                <div id="infoOnline">
-                    
-                </div>
+                <h3>Logged in Users</h3>
+                <div id="infoOnline" class="userlist"></div>
             </div>
             <div class="list">
-                <h1>Logged out Users</h1>
-                <div id="infoOffline">
-                    
-                </div>
+                <h3>Logged out Users</h3>
+                <div id="infoOffline" class="userlist"></div>
             </div>
             <br>
             <br>
             
-            <h1>Chat History</h1>
+            <h3>Chat History</h3>
 
             <form>
                 Select Date to display message history:
@@ -101,8 +88,7 @@
                 <input type="date" id="selectedDate" name ="date1" min="2018-01-01"> <!-- HTML Validator error for IE 11! Supported in FireFox and Chrome. -->
                 <button id="datePicker" type="button" onclick="changeDate();">Load</button>
                 <button id="datePickerReset" type="button" onclick="resetChangeDate();">Reset</button>
-                <br>
-                <br>
+
                 <label id=currentDate></label>
             </form>
 
