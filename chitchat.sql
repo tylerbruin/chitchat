@@ -49,53 +49,9 @@ CREATE TABLE `messages` (
 
 
 INSERT INTO `users` (`username`, `password`, `fname`, `lname`, `email`, `status`) VALUES
-('tiddles', 'tyler1', 'Tyler', 'Bruin', 'tylerbruin@hotmail.com', 'offline');
+('Tyler', 'tyler1', 'Tyler', 'Bruin', 'tylerbruin@hotmail.com', 'offline');
 INSERT INTO `users` (`username`, `password`, `fname`, `lname`, `email`, `status`) VALUES
-('rosco', 'rosco1', 'Ross', 'Taylor', 'rosstaylor@gmail.com', 'offline');
-
-INSERT INTO `messages` ( `content`, `username`) VALUES
-('Why did the chicken cross the road? huh?', 'tiddles');
-INSERT INTO `messages` ( `content`, `username`) VALUES
-('Whats for dinner?', 'tiddles');
-INSERT INTO `messages` ( `content`, `username`) VALUES
-('Lets get KFC! :-D', 'tiddles');
-
-INSERT INTO `messages` ( `content`, `username`, `datetime`) VALUES
-('its the 22nd! lets get pizza!', 'tiddles', '2018-03-22 00:12:18');
-INSERT INTO `messages` ( `content`, `username`, `datetime`) VALUES
-('nah man, KFC!', 'Cory', '2018-03-22 00:12:19');
-INSERT INTO `messages` ( `content`, `username`, `datetime`) VALUES
-('Nah screw that!', 'tiddles', '2018-03-22 00:12:20');
-INSERT INTO `messages` ( `content`, `username`, `datetime`) VALUES
-('Im keen for whatever!', 'Haydz', '2018-03-22 00:12:25');
-
-
-INSERT INTO `messages` ( `content`, `username`, `datetime`) VALUES
-('How is the weather today?', 'Cory', '2018-03-21 00:17:18');
-INSERT INTO `messages` ( `content`, `username`, `datetime`) VALUES
-('its the 21st of March, its great!', 'tiddles', '2018-03-21 00:17:18');
-INSERT INTO `messages` ( `content`, `username`, `datetime`) VALUES
-('Awesome, see you later!', 'Cory', '2018-03-21 00:18:18');
-INSERT INTO `messages` ( `content`, `username`, `datetime`) VALUES
-('Ok!', 'tiddles', '2018-03-21 00:20:18');
-
-INSERT INTO `messages` ( `content`, `username`, `datetime`) VALUES
-('What is there to do in town on the 20th?', 'Haydz', '2018-03-20 00:06:18');
-INSERT INTO `messages` ( `content`, `username`, `datetime`) VALUES
-('KFC?', 'tiddles', '2018-03-20 00:06:19');
-INSERT INTO `messages` ( `content`, `username`, `datetime`) VALUES
-('Yeah, sounds good!', 'Haydz', '2018-03-20 00:06:19');
-INSERT INTO `messages` ( `content`, `username`, `datetime`) VALUES
-('See you guys there!', 'Cory', '2018-03-20 00:06:20');
-
-INSERT INTO `messages` ( `content`, `username`, `datetime`) VALUES
-('Hey team, what day is it?', 'Haydz', '2018-03-19 00:09:17');
-INSERT INTO `messages` ( `content`, `username`, `datetime`) VALUES
-('nvm, its the 19th, ha ha', 'Haydz', '2018-03-19 00:09:17');
-INSERT INTO `messages` ( `content`, `username`, `datetime`) VALUES
-('Is anyone else here?', 'Haydz', '2018-03-19 00:09:17');
-INSERT INTO `messages` ( `content`, `username`, `datetime`) VALUES
-('Hello??', 'Haydz', '2018-03-19 00:09:18');
+('David', 'david1', 'David', 'Smith', 'davidsmith@gmail.com', 'offline');
 
 
 
